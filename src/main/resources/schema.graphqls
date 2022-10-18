@@ -8,6 +8,11 @@ type Query {
     allStudents: [Student]
 }
 
+type Mutation {
+    createStudent(cin: String!, nompre: String!, email: String!): Student
+}
+
 schema {
     query: Query
+    mutation: Mutation
 }
